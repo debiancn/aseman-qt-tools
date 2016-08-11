@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: telegramqml
-Source: aseman.co/telegramqml
+Upstream-Name: aseman-qt-tools
+Source: aseman.co/aseman-qt-tools
 
 Files: *
 Copyright: 2015 Aseman Team
@@ -8,9 +8,9 @@ License: GPL-3.0+
 
 Files: debian/*
 Copyright: 2015 Aseman Team <contact@aseman.co>
-License: GPL-3.0+
+License: GPL-3+
 
-License: GPL-3.0+
+License: GPL-3+
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation, either version 3 of the License, or
@@ -26,8 +26,3 @@ License: GPL-3.0+
  .
  On Debian systems, the complete text of the GNU General
  Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
-
-# Please also look if there are files or directories which have a
-# different copyright/license attached and list them here.
-# Please avoid to pick license terms that are more restrictive than the
-# packaged work, as it may make Debian's contributions unacceptable upstream.
