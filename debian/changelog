@@ -1,3 +1,9 @@
+asemantools (1.0.0-7aseman-xenial-1) unstable; urgency=medium
+
+  * Repack for Debian unstable.
+
+ -- Boyuan Yang <073plan@gmail.com>  Thu, 11 Aug 2016 17:48:58 +0800
+
 asemantools (1.0.0-7aseman-xenial) xenial; urgency=medium
 
   * First Release
