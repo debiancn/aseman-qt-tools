@@ -1,3 +1,9 @@
+asemantools (1.0.0-7aseman-xenial-2) unstable; urgency=medium
+
+  * No change rebuild against latest libqtelegram.
+
+ -- Boyuan Yang <073plan@gmail.com>  Tue, 30 Aug 2016 20:36:37 +0800
+
 asemantools (1.0.0-7aseman-xenial-1) unstable; urgency=medium
 
   * Repack for Debian unstable.

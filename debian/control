@@ -14,7 +14,7 @@ Build-Depends:
  qtmultimedia5-dev (>= 5.2.0),
  libqt5webkit5-dev (>= 5.1.0),
  libssl-dev
-Standards-Version: 3.9.5
+Standards-Version: 3.9.8
 Homepage: https://github.com/Aseman-Land/aseman-qt-tools
 Vcs-Git: https://github.com/Aseman-Land/aseman-qt-tools.git
 
