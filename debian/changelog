@@ -1,3 +1,10 @@
+asemantools (1.0.0-7aseman-xenial+git20160915.f76b7bce.1-1) unstable; urgency=medium
+
+  * New upstream commit f76b7bce, released on 20160915:
+    - Various bugfixes.
+
+ -- Boyuan Yang <073plan@gmail.com>  Sun, 02 Oct 2016 10:38:48 +0800
+
 asemantools (1.0.0-7aseman-xenial-2) unstable; urgency=medium
 
   * No change rebuild against latest libqtelegram.
