@@ -1,0 +1,23 @@
+From: Boyuan Yang <073plan@gmail.com>
+Date: Sun, 2 Oct 2016 10:53:02 +0800
+Subject: pro: patch build instructions.
+
+We don't need installation instruction, so patching to
+remove it.
+---
+ asemantools.pro | 2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/asemantools.pro b/asemantools.pro
+index ea1b9c9..78b2417 100644
+--- a/asemantools.pro
++++ b/asemantools.pro
+@@ -29,8 +29,6 @@ COPYFOLDERS += qmlFiles
+ 
+ include(qmake/qmlplugindump.pri)
+ !win32-msvc* {
+-    include (qmake/copyData.pri)
+-    copyData ()
+ }
+ 
+ isEmpty(PREFIX) {
