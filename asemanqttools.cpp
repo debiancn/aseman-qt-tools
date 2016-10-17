@@ -129,7 +129,7 @@ void AsemanQtTools::registerTypes(const char *uri, bool exportMode)
     registerType<AsemanFileDownloaderQueueItem>(uri, 1,0, "FileDownloaderQueueItem", exportMode);
     registerType<AsemanFileDownloaderQueue>(uri, 1,0, "FileDownloaderQueue", exportMode);
     registerType<AsemanFontHandler>(uri, 1,0, "FontHandler", exportMode);
-    registerType<AsemanApplicationItem>(uri, 1,0, "AsemanApplication", exportMode);
+    registerType<AsemanApplication>(uri, 1,0, "AsemanApplication", exportMode);
     registerType<AsemanQmlSmartComponent>(uri, 1,0, "SmartComponentCore", exportMode);
 #ifdef DESKTOP_LINUX
     registerType<AsemanMimeApps>(uri, 1,0, "MimeApps", exportMode);
@@ -207,6 +207,24 @@ void AsemanQtTools::registerSecureTypes(const char *uri, bool exportMode)
     register_list.insert(uri);
 }
 
+bool AsemanQtTools::safeRegisterTypes(const char *uri, QQmlEngine *engine)
+{
+    QString data = QString("import %1 %2.%3\nAsemanObject {}").arg(QString(uri)).arg(1).arg(0);
+    QQmlComponent component(engine);
+    component.setData(data.toUtf8(), QUrl());
+    QQuickItem *item = qobject_cast<QQuickItem *>(component.create());
+    if(item) /*! Test if registered before !*/
+    {
+        delete item;
+        return false;
+    }
+
+    registerTypes(uri);
+    registerSecureTypes( QString("%1.Secure").arg(QString(uri)).toUtf8() );
+    engine->setImportPathList( QStringList()<< engine->importPathList() << "qrc:///asemantools/qml" );
+    return true;
+}
+
 AsemanQuickViewWrapper *AsemanQtTools::quickView(QQmlEngine *engine)
 {
     static QHash<QQmlEngine*, QPointer<AsemanQuickViewWrapper> > views;
@@ -214,12 +232,7 @@ AsemanQuickViewWrapper *AsemanQtTools::quickView(QQmlEngine *engine)
     if(res)
         return res;
 
-#ifdef ASEMAN_QML_PLUGIN
     AsemanQuickView *view = new AsemanQuickView(engine, engine);
-#else
-    AsemanQuickView *view = qobject_cast<AsemanQuickView*>(engine->parent());
-#endif
-
     if(view)
     {
         res = new AsemanQuickViewWrapper(view, engine);

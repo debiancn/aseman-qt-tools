@@ -3,7 +3,6 @@
         <file>qml/AsemanTools/AnimationItem.qml</file>
         <file>qml/AsemanTools/Button.qml</file>
         <file>qml/AsemanTools/CheckBox.qml</file>
-        <file>qml/AsemanTools/ColorList.qml</file>
         <file>qml/AsemanTools/CursorPicker.qml</file>
         <file>qml/AsemanTools/DateTimeChooser.qml</file>
         <file>qml/AsemanTools/GetPassDialog.qml</file>
@@ -13,7 +12,6 @@
         <file>qml/AsemanTools/STextInput.qml</file>
         <file>qml/AsemanTools/LineEdit.qml</file>
         <file>qml/AsemanTools/MenuButton.qml</file>
-        <file>qml/AsemanTools/ModernProgressBar.qml</file>
         <file>qml/AsemanTools/MenuController.qml</file>
         <file>qml/AsemanTools/NormalWheelScroll.qml</file>
         <file>qml/AsemanTools/PhysicalScrollBar.qml</file>
@@ -36,7 +34,6 @@
         <file>qml/AsemanTools/PasteButton.qml</file>
         <file>qml/AsemanTools/CradleBits.qml</file>
         <file>qml/AsemanTools/CradleIndicator.qml</file>
-        <file>qml/AsemanTools/qmldir</file>
         <file>qml/AsemanTools/files/pointer-dialog.png</file>
         <file>qml/AsemanTools/files/pointer.png</file>
         <file>qml/AsemanTools/files/back_32.png</file>
@@ -152,5 +149,12 @@
         <file>qml/AsemanTools/files/aseman-silver-shadowed.png</file>
         <file>qml/AsemanTools/AsemanProductsList.qml</file>
         <file>qml/AsemanTools/MessageDialogOkCancelWarning.qml</file>
+        <file>qml/AsemanTools/CursorShapeArea.qml</file>
+        <file>qml/AsemanTools/NullMouseArea.qml</file>
+        <file>qml/AsemanTools/plugins.qmltypes</file>
+        <file>qml/AsemanTools/AsemanWindow.qml</file>
+    </qresource>
+    <qresource prefix="/asemantools/qml/AsemanTools">
+        <file>qmldir</file>
     </qresource>
 </RCC>
