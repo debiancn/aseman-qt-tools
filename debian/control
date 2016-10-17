@@ -3,7 +3,7 @@ Section: libs
 Priority: optional
 Maintainer: Aseman Team <contact@aseman.co>
 Build-Depends:
- debhelper (>= 9),
+ debhelper (>= 10),
  qtbase5-dev (>= 5.2.0),
  qtpositioning5-dev (>= 5.2.0),
  libqt5sensors5-dev (>= 5.2.0),
@@ -13,7 +13,7 @@ Build-Depends:
  qtdeclarative5-dev (>= 5.2.0),
  qtmultimedia5-dev (>= 5.2.0),
  libqt5webkit5-dev (>= 5.1.0),
- libssl-dev
+ libssl-dev,
 Standards-Version: 3.9.8
 Homepage: https://github.com/Aseman-Land/aseman-qt-tools
 Vcs-Git: https://github.com/Aseman-Land/aseman-qt-tools.git
