@@ -4,16 +4,17 @@ Priority: optional
 Maintainer: Aseman Team <contact@aseman.co>
 Build-Depends:
  debhelper (>= 10),
- qtbase5-dev (>= 5.2.0),
- qtpositioning5-dev (>= 5.2.0),
+ dh-exec (>= 0.3),
  libqt5sensors5-dev (>= 5.2.0),
- qt5keychain-dev,
+ libqt5webkit5-dev (>= 5.1.0),
+ libssl-dev,
  qt5-qmake,
+ qt5keychain-dev,
+ qtbase5-dev (>= 5.2.0),
  qtdeclarative5-dev,
  qtdeclarative5-dev (>= 5.2.0),
  qtmultimedia5-dev (>= 5.2.0),
- libqt5webkit5-dev (>= 5.1.0),
- libssl-dev,
+ qtpositioning5-dev (>= 5.2.0),
 Standards-Version: 3.9.8
 Homepage: https://github.com/Aseman-Land/aseman-qt-tools
 Vcs-Git: https://github.com/Aseman-Land/aseman-qt-tools.git
@@ -21,6 +22,8 @@ Vcs-Git: https://github.com/Aseman-Land/aseman-qt-tools.git
 Package: asemantools
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
 Description: Aseman tools for QtQML and Qml
  It's free and released under the GPLv3 license.

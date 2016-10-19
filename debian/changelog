@@ -1,8 +1,12 @@
 asemantools (1.0.0-7aseman-xenial+git20161017.0.34d8ed8a-1) unstable; urgency=medium
 
   * New upstream commit.
+  * Various packaging refine:
+    - Enable full hardening flags.
+    - Ensure the qmake buildsystem.
+    - Bump to debhelper v10.
 
- -- Boyuan Yang <073plan@gmail.com>  Mon, 17 Oct 2016 23:30:23 +0800
+ -- Boyuan Yang <073plan@gmail.com>  Wed, 19 Oct 2016 11:54:53 +0800
 
 asemantools (1.0.0-7aseman-xenial+git20160915.f76b7bce.1-1) unstable; urgency=medium
 
