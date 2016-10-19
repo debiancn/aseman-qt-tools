@@ -17,3 +17,8 @@ override_dh_auto_configure:
 	dh_auto_configure --buildsystem=qmake -- \
 	    QT+=widgets QT+=multimedia QT+=dbus QT+=sensors QT+=positioning \
 	    QMAKE_CFLAGS_ISYSTEM=
+
+override_dh_auto_install:
+	dh_auto_install --buildsystem=qmake --
+	mkdir -p debian/asemantools/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/qml
+	mv debian/asemantools/usr/AsemanTools debian/asemantools/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/qml/
