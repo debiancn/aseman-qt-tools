@@ -7,7 +7,7 @@ Build-Depends:
  dh-exec (>= 0.3),
  libqt5sensors5-dev (>= 5.2.0),
  libqt5webkit5-dev (>= 5.1.0),
- libssl-dev,
+ libssl1.0-dev,
  qt5-qmake,
  qt5keychain-dev,
  qtbase5-dev (>= 5.2.0),
